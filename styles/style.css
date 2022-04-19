@@ -256,7 +256,7 @@ body {
 }
 
 body, h1, h2, h3, p {
-  font-family: "VT323";
+  font-family: "Source Sans Pro";
 }
 
 h2 {
@@ -280,4 +280,43 @@ ul, li, a, input {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.nav {
+  background-color: #5E94A6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.nav li {
+  padding: 15px;
+}
+
+header {
+  background-color: #5E94A6;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
