@@ -1,5 +1,5 @@
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@600&display=swap");
 /* styles.scss */
 html {
   line-height: 1.15;
@@ -248,6 +248,7 @@ html {
 * {
   padding: 0;
   margin: 0;
+  font-family: "Source Sans Pro";
 }
 
 body {
@@ -255,8 +256,14 @@ body {
   margin: 0 auto;
 }
 
-body, h1, h2, h3, p {
-  font-family: "Source Sans Pro";
+h1 {
+  font-family: "Playfair Display";
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Playfair Display";
+  font-size: 3rem;
 }
 
 h2 {
@@ -268,26 +275,45 @@ ul, li, a, input {
   margin: 0;
 }
 
-.pokemon-content p {
-  font-size: 1.4rem;
-}
-
-.pokemon-content h3 {
-  font-size: 2.5rem;
-}
-
 .wrapper {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
 
-ul, li {
+ul, li, a {
   list-style: none;
+  text-decoration: none;
+}
+
+.get-touch, .live, .code, .submit {
+  border: none;
+  background-color: #EAD9B4;
+  font-family: "Source Sans Pro";
+  color: black;
+  text-transform: lowercase;
+  padding: 5px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.get-touch:hover, .live:hover, .code:hover, .submit:hover {
+  background-color: #BB8E6D;
+}
+
+.submit {
+  background-color: #d19c75;
+}
+
+.get-touch a {
+  color: black;
+}
+
+ul li a {
+  color: white;
 }
 
 .nav {
-  background-color: #5E94A6;
+  background-color: #205a70;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,7 +331,7 @@ ul, li {
 }
 
 header {
-  background-color: #5E94A6;
+  background-color: #205a70;
 }
 
 .header-content {
@@ -319,4 +345,47 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+  padding: 150px 0px;
+}
+
+.header-content h1 {
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+header .get-touch {
+  margin-top: 20px;
+}
+
+#about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+#skills {
+  background-color: #b2cfd9;
+  color: #0b2028;
+}
+
+#projects {
+  background-color: white;
+}
+
+#contact {
+  background-color: #EAD9B4;
+}
+
+#contact h2 {
+  color: white;
+}
+
+footer {
+  background-color: #205a70;
 }

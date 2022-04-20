@@ -1,0 +1,23 @@
+#about-me {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+#skills {
+  background-color: $primaryLight;
+  color: $black;
+}
+
+
+#projects {
+  background-color: white;
+}
+
+#contact{
+  background-color: $secondary;
+}
+
+#contact h2 {
+  color: white;
+}

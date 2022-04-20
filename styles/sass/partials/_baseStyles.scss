@@ -4,6 +4,33 @@
   margin: 0 auto;
 }
 
-ul, li {
+ul, li, a{
   list-style: none;
+  text-decoration: none;
+}
+
+.get-touch, .live, .code, .submit{
+  border: none;
+  background-color: $secondary;
+  font-family: $sourceSans;
+  color: black;
+  text-transform: lowercase;
+  padding: 5px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  &:hover{
+    background-color: $secondaryDark;
+  }
+}
+
+.submit{
+  background-color: $secondaryDark2;
+}
+
+.get-touch a {
+  color: black;
+}
+
+ul li a{
+  color: white;
 }

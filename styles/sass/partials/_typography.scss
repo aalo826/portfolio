@@ -8,6 +8,7 @@ html{
 * {
     padding: 0;
     margin: 0;
+    font-family: $sourceSans;
 }
 
 body {
@@ -15,9 +16,15 @@ body {
     margin: 0 auto;
 }
 
-body, h1,h2,h3, p{
-  font-family: $sourceSans;
 
+h1 {
+  font-family: $playfair;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: $playfair;
+  font-size: 3rem;
 }
 
 h2 {
@@ -29,12 +36,5 @@ ul, li, a, input {
     margin: 0;
 }
 
-.pokemon-content p {
-  font-size: 1.4rem;
-}
-
-.pokemon-content h3{
-  font-size: 2.5rem;
-}
 
 
