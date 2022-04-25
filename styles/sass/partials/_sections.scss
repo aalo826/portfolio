@@ -1,7 +1,4 @@
 
-#projects {
-  background-color: white;
-}
 
 #contact{
   background-color: $secondary;
@@ -60,3 +57,39 @@
   align-items: center;
   padding: 15px;
 }
+
+// projects section
+
+#projects {
+  background-color: $primarySLight;
+}
+
+#projects .wrapper {
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#projects h2{
+  color: $primarySDark;
+}
+
+.project-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+
+.project-image {
+  width: 50%;
+}
+
+.project-content {
+  width: 50%;
+}
+
+
+
+
