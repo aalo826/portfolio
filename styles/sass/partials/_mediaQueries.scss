@@ -1,0 +1,39 @@
+@media (max-width: 840px){
+  .project-container {
+    flex-direction: column;
+  }
+
+  .project-image {
+  height: 215px;
+  width: 340px;
+  margin-top: 15px;
+  margin-right: 40px;
+  }
+
+  .project-content h3 {
+    padding-top: 25px;
+  }
+
+  .button-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    min-width: 50%;
+    padding: 0;
+
+  }
+
+}
+
+
+@media (max-width: 790px) {
+  .nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: flex;
+  }
+
+}
+

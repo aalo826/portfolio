@@ -356,6 +356,36 @@ ul li a {
   color: #EAD9B4;
 }
 
+#hamburger-icon {
+  display: none;
+  background-color: #205a70;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+  padding: 10px 20px;
+}
+
+.hamburger-nav {
+  display: none;
+  background-color: #205a70;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.hamburger-nav li {
+  padding: 15px;
+}
+
+.hamburger-nav li a:hover {
+  color: #EAD9B4;
+}
+
 header {
   background-color: #205a70;
 }
@@ -364,6 +394,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -484,15 +515,16 @@ header .get-touch {
 
 #projects h2 {
   color: #325A70;
+  margin-bottom: 30px;
 }
 
 .project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -500,11 +532,23 @@ header .get-touch {
 }
 
 .project-image {
-  width: 50%;
+  height: 260px;
+  width: 400px;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .project-content {
-  width: 50%;
+  max-width: 35%;
+}
+
+.project-content p {
+  padding: 20px 0px;
 }
 
 #projects h4 {
@@ -547,6 +591,7 @@ header .get-touch {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   width: 60%;
 }
 
@@ -576,7 +621,7 @@ header .get-touch {
 .contact-logos a:active {
   color: #07334F;
 }
-.contact-logos a:visited {
+.contact-logos a:visited, .contact-logos a:link {
   color: #325A70;
 }
 
@@ -617,13 +662,13 @@ header .get-touch {
 
 #name {
   border-style: none;
-  padding: 10px 0px;
+  padding: 10px 5px 10px 10px;
   margin: 10px 0px;
 }
 
 #email {
   border-style: none;
-  padding: 10px 0px;
+  padding: 10px 5px 10px 10px;
   margin: 10px 0px;
 }
 
@@ -631,7 +676,7 @@ header .get-touch {
   border-style: none;
   width: 100%;
   resize: none;
-  padding: 100px 0px;
+  padding: 100px 5px 10px 10px;
   margin: 10px 0px;
 }
 
@@ -644,9 +689,56 @@ header .get-touch {
           justify-content: center;
   text-align: center;
   width: 17%;
+  padding: 7px 45px;
+  margin-top: 20px;
 }
 
 footer {
+  text-align: center;
   background-color: #205a70;
   height: 100%;
+}
+
+@media (max-width: 840px) {
+  .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .project-image {
+    height: 215px;
+    width: 340px;
+    margin-top: 15px;
+    margin-right: 40px;
+  }
+
+  .project-content h3 {
+    padding-top: 25px;
+  }
+
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 50%;
+    padding: 0;
+  }
+}
+@media (max-width: 790px) {
+  .nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }

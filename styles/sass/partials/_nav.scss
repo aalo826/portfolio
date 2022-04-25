@@ -1,3 +1,4 @@
+// default nav
 .nav {
   background-color: $primaryDark;
   display: flex;
@@ -12,6 +13,33 @@
 }
 
 .nav li a {
+  &:hover {
+    color: $secondary;
+  }
+}
+
+// hamburger nav
+#hamburger-icon{
+  display: none;
+  background-color: $primaryDark;
+  justify-content: flex-end;
+  color: white;
+  padding: 10px 20px;
+}
+
+.hamburger-nav {
+  display: none;
+  background-color: $primaryDark;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hamburger-nav li {
+  padding: 15px;
+}
+
+.hamburger-nav li a {
   &:hover {
     color: $secondary;
   }
