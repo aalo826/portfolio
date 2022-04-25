@@ -252,7 +252,6 @@ html {
 }
 
 body {
-  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -275,7 +274,18 @@ ul, li, a, input {
   margin: 0;
 }
 
+p {
+  line-height: 1.6rem;
+}
+
+body {
+  color: black;
+}
+
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
@@ -292,7 +302,7 @@ ul, li, a {
   font-family: "Source Sans Pro";
   color: black;
   text-transform: lowercase;
-  padding: 5px 15px;
+  padding: 7px 25px;
   margin-top: 20px;
   cursor: pointer;
 }
@@ -359,16 +369,6 @@ header .get-touch {
   margin-top: 20px;
 }
 
-#about-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: white;
-}
-
 #skills {
   background-color: #b2cfd9;
   color: #0b2028;
@@ -386,6 +386,34 @@ header .get-touch {
   color: white;
 }
 
+#about-me {
+  background-color: white;
+  padding: 80px 0px;
+}
+
+#about-me .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about-me h2 {
+  color: #205a70;
+}
+
+#about-me p {
+  padding-top: 10px;
+  text-align: center;
+}
+
 footer {
   background-color: #205a70;
+  height: 100%;
 }

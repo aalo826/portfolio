@@ -1,8 +1,4 @@
-#about-me {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-}
+
 
 #skills {
   background-color: $primaryLight;
@@ -20,4 +16,24 @@
 
 #contact h2 {
   color: white;
+}
+
+//  about section
+#about-me {
+  background-color: white;
+  padding: 80px 0px;
+}
+#about-me .wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me h2{
+  color: $primaryDark;
+}
+
+#about-me p {
+  padding-top: 10px;
+  text-align: center;
 }
