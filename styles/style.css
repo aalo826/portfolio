@@ -269,6 +269,14 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 0.9rem;
+}
+
 ul, li, a, input {
   padding: 0;
   margin: 0;
@@ -428,6 +436,8 @@ header .get-touch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -469,6 +479,7 @@ header .get-touch {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 100px 0px;
 }
 
 #projects h2 {
@@ -485,6 +496,7 @@ header .get-touch {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 25px 0px;
 }
 
 .project-image {
@@ -493,6 +505,11 @@ header .get-touch {
 
 .project-content {
   width: 50%;
+}
+
+#projects h4 {
+  color: #205a70;
+  text-transform: uppercase;
 }
 
 footer {
