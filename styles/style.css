@@ -286,6 +286,10 @@ p {
   line-height: 1.6rem;
 }
 
+.label {
+  line-height: 1.5em;
+}
+
 body {
   color: black;
 }
@@ -348,6 +352,10 @@ ul li a {
   padding: 15px;
 }
 
+.nav li a:hover {
+  color: #EAD9B4;
+}
+
 header {
   background-color: #205a70;
 }
@@ -375,14 +383,6 @@ header {
 
 header .get-touch {
   margin-top: 20px;
-}
-
-#contact {
-  background-color: #EAD9B4;
-}
-
-#contact h2 {
-  color: white;
 }
 
 #about-me {
@@ -510,6 +510,140 @@ header .get-touch {
 #projects h4 {
   color: #205a70;
   text-transform: uppercase;
+}
+
+#contact {
+  color: #07334F;
+  background-color: #EAD9B4;
+  padding: 100px 0px;
+}
+
+#contact h2 {
+  color: white;
+  text-align: center;
+}
+
+#contact .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.contact-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #325A70;
+}
+
+.contact-logos {
+  margin: 30px 30px;
+}
+.contact-logos:hover {
+  color: #BB8E6D;
+}
+
+.contact-logos a:hover {
+  color: #BB8E6D;
+}
+.contact-logos a:active {
+  color: #07334F;
+}
+.contact-logos a:visited {
+  color: #325A70;
+}
+
+#get-in-touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contact-form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.contact-form-message {
+  width: 100%;
+  min-height: 125px;
+}
+
+#name {
+  border-style: none;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+#email {
+  border-style: none;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+#message {
+  border-style: none;
+  width: 100%;
+  resize: none;
+  padding: 100px 0px;
+  margin: 10px 0px;
+}
+
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 17%;
 }
 
 footer {

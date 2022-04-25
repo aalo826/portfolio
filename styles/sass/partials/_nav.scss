@@ -10,3 +10,9 @@
 .nav li {
   padding: 15px;
 }
+
+.nav li a {
+  &:hover {
+    color: $secondary;
+  }
+}
