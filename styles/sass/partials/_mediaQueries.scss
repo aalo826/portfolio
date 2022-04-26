@@ -35,6 +35,8 @@
     display: flex;
   }
 
+
+
   .project-content {
     min-width: 100%;
     display: flex;
@@ -44,7 +46,13 @@
   .project-image img{
     margin-left: 20px;
   }
+}
+
+@media (min-width: 790px){
+  .mobile-menu{
+    display: none;
   }
+}
 
 
 @media (max-width: 340px) {
