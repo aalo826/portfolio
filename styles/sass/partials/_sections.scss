@@ -71,6 +71,11 @@
   justify-content: center;
   align-items: center;
   padding: 25px 0px;
+  border-bottom: 5px solid white;
+}
+
+.project-container:nth-of-type(3) {
+  border-bottom: none;
 }
 
 .project-image {
@@ -139,14 +144,14 @@
 }
 
 .contact-logos a{
-  &:hover {
-    color: $secondaryDark;
-  }
-  &:active{
-    color:$black;
-  }
   &:visited, &:link {
     color: $primarySDark;
+  }
+}
+
+.contact-logos i{
+  &:hover{
+    color:$secondaryDark
   }
 }
 
@@ -190,7 +195,7 @@
   border-style: none;
   width: 100%;
   resize: none;
-  padding: 100px 5px 10px 10px;
+  // padding: 100px 5px 10px 10px;
   margin: 10px 0px;
 }
 

@@ -1,8 +1,17 @@
-// // hamburger menu
+// hamburger menu
 
-// document.getElementById('hamburger-icon').addEventListener('click', hamburgerMenu)
+const hamburgerDropdown = document.querySelector('#hamburger-icon')
+const hamburgerNav = document.querySelector('.hamburger-nav')
 
-// const hamburgerMenu = () => {
-//   const
-//   document.querySelector('.hamburger-nav').classList.add()
-// }
+hamburgerDropdown.addEventListener('click', function() {
+
+  if (hamburgerNav.style.opacity === '1'){
+    // hamburgerNav.style.display = "none";
+    hamburgerNav.style.opacity = "0";
+  } else {
+    // hamburgerNav.style.display = "block";
+    hamburgerNav.style.opacity = "1";
+  }
+
+})
+

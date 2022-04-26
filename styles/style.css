@@ -367,7 +367,9 @@ ul li a {
 }
 
 .hamburger-nav {
-  display: none;
+  position: absolute;
+  display: block;
+  opacity: 0;
   background-color: #205a70;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -376,10 +378,26 @@ ul li a {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .hamburger-nav li {
+  position: relative;
   padding: 15px;
+}
+
+.hamburger-nav li::after {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: white;
+  height: 1px;
+  width: 350px;
+  bottom: 0px;
+  left: 24%;
+  margin-top: 25px;
 }
 
 .hamburger-nav li a:hover {
@@ -529,6 +547,11 @@ header .get-touch {
       -ms-flex-align: center;
           align-items: center;
   padding: 25px 0px;
+  border-bottom: 5px solid white;
+}
+
+.project-container:nth-of-type(3) {
+  border-bottom: none;
 }
 
 .project-image {
@@ -615,14 +638,12 @@ header .get-touch {
   color: #BB8E6D;
 }
 
-.contact-logos a:hover {
-  color: #BB8E6D;
-}
-.contact-logos a:active {
-  color: #07334F;
-}
 .contact-logos a:visited, .contact-logos a:link {
   color: #325A70;
+}
+
+.contact-logos i:hover {
+  color: #BB8E6D;
 }
 
 #get-in-touch {
@@ -676,7 +697,6 @@ header .get-touch {
   border-style: none;
   width: 100%;
   resize: none;
-  padding: 100px 5px 10px 10px;
   margin: 10px 0px;
 }
 
@@ -740,5 +760,28 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .project-content {
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .project-image img {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 340px) {
+  .project-image {
+    display: none;
   }
 }

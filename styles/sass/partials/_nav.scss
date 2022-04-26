@@ -28,15 +28,32 @@
 }
 
 .hamburger-nav {
-  display: none;
+  position: absolute;
+  display: block;
+  opacity: 0;
   background-color: $primaryDark;
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
+  transition: all 1s;
 }
 
 .hamburger-nav li {
+  position: relative;
   padding: 15px;
+}
+
+.hamburger-nav li::after{
+  content: "";
+  display: block;
+  position: relative;
+  background-color: white;
+  height: 1px;
+  width: 350px;
+  bottom: 0px;
+  left: 24%;
+margin-top: 25px;
 }
 
 .hamburger-nav li a {
