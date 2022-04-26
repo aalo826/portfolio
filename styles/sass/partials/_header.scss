@@ -4,6 +4,7 @@ header {
 
 .header-content{
   display: flex;
+  position: relative;
   text-align: center;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,46 @@ header {
   padding: 0;
 }
 
+.header-content h3{
+  font-family: $pen;
+  padding-bottom: 40px;
+}
+
 header .get-touch{
   margin-top: 20px;
+}
+
+.snorlax {
+  opacity: 0;
+  position: absolute;
+  top: 150px;
+  right: 150px;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.snorlax:hover ~ .snorlax-message{
+    position: absolute;
+  top: 0;
+  right: 0;
+  font-family: $pen;
+  color: white;
+  opacity: 1;
+}
+
+.snorlax-message p{
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  font-family: $pen;
+  color: white;
+}
+
+.snorlax-message{
+  position: absolute;
+  bottom: 195px;
+  left: 180px;
+  font-family: $pen;
 }

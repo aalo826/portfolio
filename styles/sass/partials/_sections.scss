@@ -13,9 +13,15 @@
   color: $primaryDark;
 }
 
+
 #about-me p {
   padding-top: 10px;
   text-align: center;
+  color: $black;
+}
+
+.juno {
+  color: $secondaryDark2;
 }
 
 // skills section
@@ -24,6 +30,11 @@
   background-color: $primaryLight;
   color: $black;
 }
+
+#skills h2{
+  font-family: $playfair;
+}
+
 
 #skills .wrapper {
   flex-direction: column;

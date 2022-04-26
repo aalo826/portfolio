@@ -13,6 +13,8 @@
 }
 
 .nav li a {
+  font-family: $pen;
+  font-size: 1.5rem;
   &:hover {
     color: $secondary;
   }
@@ -50,6 +52,8 @@
 // }
 
 .hamburger-nav li a {
+  font-family: $pen;
+  font-size: 1.5rem;
   &:hover {
     color: $secondary;
   }

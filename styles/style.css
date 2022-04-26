@@ -1,5 +1,5 @@
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Nanum+Pen+Script&family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@600&display=swap");
 /* styles.scss */
 html {
   line-height: 1.15;
@@ -248,7 +248,7 @@ html {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Source Sans Pro";
+  font-family: "Karla";
 }
 
 body {
@@ -256,16 +256,12 @@ body {
 }
 
 h1 {
-  font-family: "Playfair Display";
+  font-family: "Nanum Pen Script";
   font-size: 4rem;
 }
 
 h2 {
-  font-family: "Playfair Display";
-  font-size: 3rem;
-}
-
-h2 {
+  font-family: "Nanum Pen Script";
   font-size: 3rem;
 }
 
@@ -303,6 +299,11 @@ body {
   margin: 0 auto;
 }
 
+.small-text {
+  font-family: "Nanum Pen Script";
+  color: gray;
+}
+
 ul, li, a {
   list-style: none;
   text-decoration: none;
@@ -334,6 +335,10 @@ ul li a {
   color: white;
 }
 
+#about-me a:visited {
+  color: mediumaquamarine;
+}
+
 .nav {
   background-color: #205a70;
   display: -webkit-box;
@@ -352,6 +357,10 @@ ul li a {
   padding: 15px;
 }
 
+.nav li a {
+  font-family: "Nanum Pen Script";
+  font-size: 1.5rem;
+}
 .nav li a:hover {
   color: #EAD9B4;
 }
@@ -391,6 +400,10 @@ ul li a {
   width: 100px;
 }
 
+.hamburger-nav li a {
+  font-family: "Nanum Pen Script";
+  font-size: 1.5rem;
+}
 .hamburger-nav li a:hover {
   color: #EAD9B4;
 }
@@ -403,6 +416,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -421,8 +435,48 @@ header {
   padding: 0;
 }
 
+.header-content h3 {
+  font-family: "Nanum Pen Script";
+  padding-bottom: 40px;
+}
+
 header .get-touch {
   margin-top: 20px;
+}
+
+.snorlax {
+  opacity: 0;
+  position: absolute;
+  top: 150px;
+  right: 150px;
+}
+.snorlax:hover {
+  opacity: 1;
+}
+
+.snorlax:hover ~ .snorlax-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Nanum Pen Script";
+  color: white;
+  opacity: 1;
+}
+
+.snorlax-message p {
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  font-family: "Nanum Pen Script";
+  color: white;
+}
+
+.snorlax-message {
+  position: absolute;
+  bottom: 195px;
+  left: 180px;
+  font-family: "Nanum Pen Script";
 }
 
 #about-me {
@@ -450,11 +504,20 @@ header .get-touch {
 #about-me p {
   padding-top: 10px;
   text-align: center;
+  color: #07334F;
+}
+
+.juno {
+  color: #d19c75;
 }
 
 #skills {
   background-color: #b2cfd9;
   color: #07334F;
+}
+
+#skills h2 {
+  font-family: "Playfair Display";
 }
 
 #skills .wrapper {
