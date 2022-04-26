@@ -773,6 +773,11 @@ footer {
   height: 100%;
 }
 
+@media (max-width: 1300px) {
+  .snorlax {
+    display: none;
+  }
+}
 @media (max-width: 840px) {
   .project-container {
     -webkit-box-orient: vertical;

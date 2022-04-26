@@ -1,19 +1,22 @@
+@media (max-width: 1300px){
+  .snorlax{
+    display: none;
+  }
+}
+
 @media (max-width: 840px){
   .project-container {
     flex-direction: column;
   }
-
   .project-image {
   height: 215px;
   width: 340px;
   margin-top: 15px;
   margin-right: 40px;
   }
-
   .project-content h3 {
     padding-top: 25px;
   }
-
   .button-container {
     display: flex;
     text-align: center;
@@ -22,10 +25,7 @@
     padding: 0;
 
   }
-
 }
-
-
 @media (max-width: 790px) {
   .nav {
     display: none;
@@ -34,9 +34,6 @@
   #hamburger-icon {
     display: flex;
   }
-
-
-
   .project-content {
     min-width: 100%;
     display: flex;
@@ -47,20 +44,15 @@
     margin-left: 20px;
   }
 }
-
 @media (min-width: 790px){
   .mobile-menu{
     display: none;
   }
 }
-
-
 @media (max-width: 340px) {
-
   .project-image {
     display: none;
   }
-
 }
 
 
