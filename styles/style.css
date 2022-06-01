@@ -295,6 +295,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   max-width: 1200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   margin: 0 auto;
 }
@@ -409,24 +415,30 @@ ul li a {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #205a70;
+  height: calc(100vh - 64.5px);
 }
 
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  text-align: center;
+  text-align: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 150px 0px 150px;
   color: white;
-  padding: 150px 0px;
 }
 
 .header-content h1 {
@@ -444,14 +456,33 @@ header .get-touch {
   margin-top: 20px;
 }
 
+.arrow {
+  padding-top: 65px;
+}
+
+.fa-angles-down {
+  --fa-animation-duration: 2s;
+  --fa-bounce-rebound: 0;
+  --fa-bounce-start-scale-x: 1;
+  --fa-bounce-start-scale-y: 1;
+  --fa-bounce-jump-scale-x: 1;
+  --fa-bounce-jump-scale-y: 1;
+  --fa-bounce-land-scale-x: 1;
+  --fa-bounce-land-scale-y: 1;
+}
+
 .snorlax {
   opacity: 0;
-  position: absolute;
-  top: 150px;
-  right: 150px;
+  position: relative;
+  top: 75px;
+  right: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .snorlax:hover {
   opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .snorlax:hover ~ .snorlax-message {
@@ -461,6 +492,8 @@ header .get-touch {
   font-family: "Nanum Pen Script";
   color: white;
   opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .snorlax-message p {
@@ -517,7 +550,7 @@ header .get-touch {
 }
 
 #skills h2 {
-  font-family: "Playfair Display";
+  font-family: "Nanum Pen Script";
 }
 
 #skills .wrapper {
@@ -568,6 +601,10 @@ header .get-touch {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
+}
+
+.devicon-firebase-plain {
+  font-size: 3rem;
 }
 
 #projects {
