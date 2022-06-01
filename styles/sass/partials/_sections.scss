@@ -32,7 +32,7 @@
 }
 
 #skills h2{
-  font-family: $playfair;
+  font-family: $pen;
 }
 
 
@@ -58,6 +58,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+}
+
+.devicon-firebase-plain {
+  font-size: 3rem;
 }
 
 // projects section

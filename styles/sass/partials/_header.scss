@@ -1,15 +1,17 @@
 header {
+  display: flex;
   background-color: $primaryDark;
+  height: calc(100vh - 64.5px);
 }
 
 .header-content{
   display: flex;
-  position: relative;
-  text-align: center;
+  text-align:left;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 150px 0px 150px;
   color: white;
-  padding: 150px 0px;
 }
 
 .header-content h1 {
@@ -23,27 +25,44 @@ header {
   padding-bottom: 40px;
 }
 
-header .get-touch{
+header .get-touch {
   margin-top: 20px;
 }
 
+.arrow {
+  padding-top: 65px;
+}
+
+.fa-angles-down {
+  --fa-animation-duration: 2s;
+  --fa-bounce-rebound: 0;
+  --fa-bounce-start-scale-x: 1;
+  --fa-bounce-start-scale-y: 1;
+  --fa-bounce-jump-scale-x: 1;
+  --fa-bounce-jump-scale-y: 1;
+  --fa-bounce-land-scale-x: 1;
+  --fa-bounce-land-scale-y: 1;
+}
 .snorlax {
   opacity: 0;
-  position: absolute;
-  top: 150px;
-  right: 150px;
+  position: relative;
+  top: 75px;
+  right: 0px;
+  transition: 0.5s;
   &:hover{
     opacity: 1;
+    transition: 0.5s;
   }
 }
 
 .snorlax:hover ~ .snorlax-message{
-    position: absolute;
+  position: absolute;
   top: 0;
   right: 0;
   font-family: $pen;
   color: white;
   opacity: 1;
+  transition: 1s;
 }
 
 .snorlax-message p{
