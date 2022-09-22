@@ -666,6 +666,7 @@ header .get-touch {
 }
 
 #projects h4 {
+  padding-top: 15px;
   color: #205a70;
   text-transform: uppercase;
 }
@@ -822,18 +823,15 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
   .project-image {
     height: 215px;
     width: 340px;
     margin-top: 15px;
     margin-right: 40px;
   }
-
   .project-content h3 {
     padding-top: 25px;
   }
-
   .button-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -851,13 +849,11 @@ footer {
   .nav {
     display: none;
   }
-
   #hamburger-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-
   .project-content {
     min-width: 100%;
     display: -webkit-box;
@@ -871,7 +867,6 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-
   .project-image img {
     margin-left: 20px;
   }
